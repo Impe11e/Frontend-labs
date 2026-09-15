@@ -1,3 +1,5 @@
+/* task 1 */
+
 .layout-table {
     border-collapse: collapse;
     width: 60%;
@@ -38,3 +40,71 @@
 .middle-group:hover tr.split-row {
     background-color: #058f8f;
 }
+
+/* task 2 */
+
+.figures-row {
+    display: flex;
+    /* gap: 1rem; */
+    align-items: flex-start;
+}
+
+.circles {
+    width: 330px;
+    height: 250px;
+    margin-top: 2rem;
+}
+
+.circle {
+    grid-area: 1 / 1;
+    width: 125px;
+    height: 125px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    opacity: 0.65;
+}
+
+.circles-position {
+    position: relative;
+}
+
+.circles-position .circle {
+    position: absolute;
+    transform: none;
+}
+
+.circles-position .circle-red {
+    top: 0;
+    left: 65px;
+}
+
+.circles-position .circle-blue {
+    top: 77px;
+    left: 17px;
+}
+
+.circles-position .circle-green {
+    top: 77px;
+    left: 113px;
+}
+
+.circles-transform {
+    display: grid;
+}
+
+.circle-red {
+    background-color: red;
+    transform: translate(65px, 0);
+}
+
+.circle-blue {
+    background-color: blue;
+    transform: translate(17px, 77px);
+}
+
+.circle-green {
+    background-color: green;
+    transform: translate(113px, 77px);
+}
+
+

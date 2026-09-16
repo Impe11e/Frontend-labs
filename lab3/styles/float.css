@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+#container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+/* ну тута теж flex, але це тільки для вирівнювання самого тексту, 
+блоки вирівнялися за допомогою float як і просили в умові */
+.header, .content, .menu, .footer {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    background: #5187d6;
+    width: 100%;
+    height: 100px;
+}
+
+.content {
+    background: #afd187;
+    float: left;
+    width: 70%;
+    height: 400px;
+}
+
+.menu {
+    background: #8fa05d;
+    float: right;
+    width: 30%;
+    height: 400px;
+}
+
+.footer {
+    background: #2fe2bb;
+    clear: both;
+    width: 100%;
+    height: 80px;
+}

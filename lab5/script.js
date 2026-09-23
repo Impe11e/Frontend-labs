@@ -4,7 +4,7 @@ function validateForm(form) {
     var patterns = {
         pib: /^[А-ЯІЇЄҐ][а-яіїєґ']+\s[А-ЯІЇЄҐ]\.[А-ЯІЇЄҐ]\.$/,
         group: /^[А-ЯІЇЄҐA-Z]{2}-\d{2}$/,
-        faculty: /^[А-ЯІЇЄҐA-Zа-яіїєґa-z\s]{2,}$/,
+        faculty: /^[А-ЯІЇЄҐA-Z]{1,4}$/,
         address: /^м\.\s?[А-ЯІЇЄҐA-Zа-яіїєґa-z\-]+$/,
         telegram: /^@[A-Za-z0-9_]{4,32}$/
     };
@@ -39,7 +39,49 @@ function validateForm(form) {
         "<p><b>Факультет:</b> " + faculty + "</p>" +
         "<p><b>Адреса:</b> " + address + "</p>" +
         "<p><b>Telegram:</b> " + telegram + "</p>";
+        form.reset();
     }
-
     return false;
 }
+
+var TOTAL_CELLS = 36;
+var TARGET_NUMBER = 5;
+var ROWS = 6;
+var COLS = 6;
+
+var table = document.getElementById("grid");
+var colorPicker = document.getElementById("colorPicker");
+
+var counter = 1;
+for (var r = 0; r < ROWS; r++) {
+    var row = document.createElement("tr");
+    for (var c = 0; c < COLS; c++) {
+        var cell = document.createElement("td");
+        cell.textContent = counter;
+        cell.id = "cell-" + counter;
+        row.appendChild(cell);
+        counter++;
+    }
+    table.appendChild(row);
+}
+
+var targetCell = document.getElementById("cell-" + TARGET_NUMBER);
+
+targetCell.addEventListener("mouseover", function () {
+    var randomColor = "#" + Math.floor(Math.random() * 0xFFFFFF).toString(16).padStart(6, "0");
+    this.style.backgroundColor = randomColor;
+});
+
+targetCell.addEventListener("click", function () {
+    this.style.backgroundColor = colorPicker.value;
+});
+
+targetCell.addEventListener("dblclick", function () {
+    var chosenColor = colorPicker.value;
+    for (var i = 1; i <= TOTAL_CELLS; i++) {
+        if (i !== TARGET_NUMBER) {
+            document.getElementById("cell-" + i).style.backgroundColor = chosenColor;
+        }
+    }
+    this.style.backgroundColor = "";
+});

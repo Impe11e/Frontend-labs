@@ -64,3 +64,38 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #2980b9;
 }
+
+table#grid {
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table#grid td {
+    width: 3em;
+    height: 2.5em;
+    text-align: center;
+    border: 0.1em solid #333;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #ffffff;
+    transition: background-color 0.15s;
+}
+
+label[for="colorPicker"] {
+    margin-top: 1em;
+}
+
+input[type="color"] {
+    width: 3em;
+    height: 2em;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1em;
+}
+
+hr {
+    width: 80%;
+    margin: 2rem 0;
+    border: none;
+    border-top: 0.1em solid #ddd;
+}

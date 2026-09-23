@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Хорунжа М.С. ІМ-42</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h1>Lab Work #5</h1>
+    <h3>Форма реєстрації</h3>
+
+    <form id="regForm" onsubmit="return validateForm(this)">
+        <label for="pib">1. ПІБ:</label><br>
+        <input type="text" id="pib" name="pib" placeholder="Зеленський В.О."><br><br>
+
+        <label for="group">2. Група:</label><br>
+        <input type="text" id="group" name="group" placeholder="ІМ-42"><br><br>
+
+        <label for="faculty">3. Факультет:</label><br>
+        <input type="text" id="faculty" name="faculty" placeholder="ФІОТ"><br><br>
+
+        <label for="address">4. Адреса:</label><br>
+        <input type="text" id="address" name="address" placeholder="м. Київ"><br><br>
+
+        <label for="telegram">5. Telegram:</label><br>
+        <input type="text" id="telegram" name="telegram" placeholder="@impe11e"><br><br>
+
+        <input type="submit" value="Надіслати">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

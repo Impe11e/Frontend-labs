@@ -1,5 +1,6 @@
 import Header from "./components/Header"
 import Content from "./components/Content"
+import Image from "./components/Image"
 
 import "./style.css"
 
@@ -29,7 +30,13 @@ return (
                 movies={movies}
                 cityText={cityText}
             />
-            
+            <Image
+                src="/images/nazare.jpg"
+                alt="Nazare, Portugal"
+                initialWidth={500}
+                link="https://www.cm-nazare.pt/"
+            />
+
         </div>
     )
 }

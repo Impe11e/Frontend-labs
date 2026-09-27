@@ -31,7 +31,7 @@ return (
                 cityText={cityText}
             />
             <Image
-                src="/images/nazare.jpg"
+                src={process.env.PUBLIC_URL + "/images/nazare.jpg"}
                 alt="Nazare, Portugal"
                 initialWidth={500}
                 link="https://www.cm-nazare.pt/"

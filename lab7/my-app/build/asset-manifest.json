@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Frontend-labs/lab7/my-app/build/static/css/main.755c1c16.css",
-    "main.js": "/Frontend-labs/lab7/my-app/build/static/js/main.f30c55a2.js",
+    "main.css": "/Frontend-labs/lab7/my-app/build/static/css/main.3a366a17.css",
+    "main.js": "/Frontend-labs/lab7/my-app/build/static/js/main.95f8601e.js",
     "index.html": "/Frontend-labs/lab7/my-app/build/index.html",
-    "main.755c1c16.css.map": "/Frontend-labs/lab7/my-app/build/static/css/main.755c1c16.css.map",
-    "main.f30c55a2.js.map": "/Frontend-labs/lab7/my-app/build/static/js/main.f30c55a2.js.map"
+    "main.3a366a17.css.map": "/Frontend-labs/lab7/my-app/build/static/css/main.3a366a17.css.map",
+    "main.95f8601e.js.map": "/Frontend-labs/lab7/my-app/build/static/js/main.95f8601e.js.map"
   },
   "entrypoints": [
-    "static/css/main.755c1c16.css",
-    "static/js/main.f30c55a2.js"
+    "static/css/main.3a366a17.css",
+    "static/js/main.95f8601e.js"
   ]
 }

@@ -21,3 +21,37 @@
     margin-right: 0.5em;
     cursor: pointer;
 }
+
+.goods-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.goods-card {
+    width: 12em;
+    border: 0.1em solid #ddd;
+    border-radius: 0.4em;
+    padding: 0.8em;
+    text-align: center;
+    box-shadow: 0 0.15em 0.4em rgba(0, 0, 0, 0.1);
+}
+
+.goods-photo {
+    width: 100%;
+    height: 8em;
+    object-fit: cover;
+    border-radius: 0.3em;
+}
+
+.goods-name {
+    margin: 0.5em 0 0.2em;
+    font-size: 1em;
+}
+
+.goods-price {
+    font-weight: bold;
+    color: #27ae60;
+    margin: 0;
+}

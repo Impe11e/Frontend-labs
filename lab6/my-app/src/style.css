@@ -1,0 +1,23 @@
+.page {
+    margin: 2rem;
+}
+
+.highlight-id {
+    background-color: #6f49ac;
+    color: #f1c40f;
+}
+
+.highlight-class {
+    background-color: #08a349;
+    color: #a50606;
+}
+
+.image-controls {
+    margin-top: 1rem;
+}
+
+.image-controls button {
+    padding: 0.5em 1em;
+    margin-right: 0.5em;
+    cursor: pointer;
+}
